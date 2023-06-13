@@ -1,0 +1,29 @@
+package com.saya.interfacedemo;
+
+public class Lion implements Animal2{
+
+	@Override
+	public void eating() {
+		System.out.println("Lion eats");
+		
+	}
+
+	@Override
+	public void sleeping() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void walking() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void name() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

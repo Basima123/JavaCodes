@@ -1,0 +1,78 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form</title>
+<style>
+table {
+	cellpadding: 10px;
+}
+</style>
+<script>
+	
+</script>
+
+</head>
+
+<body>
+
+
+
+	<form action="InsertDemo" method="get">
+		<table>
+			<tr>
+				<td><label>Id</label></td>
+				<td><input type="text" name="id" id="id1"></td>
+			</tr>
+			<tr>
+				<td><label>phone</label></td>
+				<td><input type="text" name="phone" id="id2"></td>
+			</tr>
+			<tr>
+				<td><label>Name</label></td>
+				<td><input type="text" name="name" id="id3"></td>
+			</tr>
+			<td><label>Password</label></td>
+			<td><input type="password" name="pass" id="id4"></td>
+			</tr>
+			<tr>
+				<td><label>dob</label></td>
+				<td><input type="date" name="dob" id="id5"></td>
+			</tr>
+			<tr>
+				<td><label>lang</label></td>
+				<td><input type="checkbox" name="lang" id="id6-1" value="tamil">Tamil
+				<input type="checkbox" name="lang" id="id6-2"
+					value="english">english
+				<input type="checkbox" name="lang" id="id6-3" value="Malay">malay
+				<input type="checkbox" name="lang" id="id6-4"
+					value="Chinese">chinese</td>
+			</tr>
+			<tr>
+				<td><label>gender</label><input type="radio" name="gender"
+					id="id7-1" value="male"> male <input type="radio"
+					name="gender" id="id7-2" value="Female">female</td>
+				</td>
+
+			</tr>
+			<tr>
+				<td><label>degree</label></td>
+				<td><select name="degree"><option name="degree"
+							value="ug">ug</option>
+						<option name="degree" value="pg">pg</option>
+						<option name="degree" value="phd">phd</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="1"><input type="submit" value="Register">
+			<input type="submit" value="Update">
+				<input type="submit" value="Delete">
+				<input type="reset"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

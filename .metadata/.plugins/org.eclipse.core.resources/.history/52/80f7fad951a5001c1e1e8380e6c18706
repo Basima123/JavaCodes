@@ -1,0 +1,29 @@
+package utility;
+
+public class user {
+ static int id;
+	static float salary;
+	String name,email;
+	String address(String s,String c,double p) {
+		String Street=s,city=c;
+		double pin=p;
+	}
+	 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+user Banu=new user();
+user Hana =new user();
+
+Banu.id=987123;
+Banu.name="Basima";
+Banu.email="basima.banu@gmail.com";
+Banu.salary=4000;
+System.out.println("USER 1 :" + id,name,email,salary);
+System.out.println(Banu.address("Bedok", "Singapore", 123456));
+
+Hana.address("Tampines", "Singapore", 456789);
+
+	}
+
+}

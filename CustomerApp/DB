@@ -1,0 +1,3 @@
+create table customer(name varchar(20),address varchar(40),contact int,email varchar(20));
+insert into customer values('Mahi','123 chennai tamil nadu',12345678,'mahi@gmail.com');
+select * from CUSTOMER;

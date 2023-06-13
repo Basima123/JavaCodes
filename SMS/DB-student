@@ -1,0 +1,4 @@
+CREATE table student(id int,name varchar(20),dob date,address varchar(30),gender varchar(10),
+language varchar(20),uname varchar(20),password varchar(20),access varchar(5))
+insert into STUDENT values(1001,'zara','2020-12-22','123 bedok reservoir view','female','tamil,english','nurzara','zara123','user')
+select * from STUDENT

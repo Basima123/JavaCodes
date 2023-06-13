@@ -1,0 +1,50 @@
+package com.reg.controller;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/RegController")
+public class RegController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String name=request.getParameter("name");
+		String age1=request.getParameter("age");
+				int age=Integer.parseInt(age1);
+				String date1=request.getParameter("date");
+								Date date = null;
+								try {
+									date = new SimpleDateFormat("dd/MM/yyyy").parse(date1);
+								} catch (ParseException e) {
+									// TODO Auto-generated catch block
+									e.printStackTrace();
+								}
+						//SimpleDateFormat sdf=new SimpleDateFormat("dd/MM/yyyy");
+				String lang=request.getParameter("lang");
+			    String gender=request.getParameter("gender");
+				String uname=request.getParameter("uname");
+				String password=request.getParameter("password");
+				String email=request.getParameter("email");
+				String contact1=request.getParameter("contact");
+				//long contact=Long.parseLong(contact1);
+				String address=request.getParameter("address");
+				String type=request.getParameter("type");
+				System.out.println("name=" + name + ", age=" + age + ", dob=" + date + ", lang=" + lang + ", gender=" + gender
+				+ ", uname=" + uname + ", password=" + password + ", email=" + email + ", contact=" + contact1
+				+ ", address=" + address + ", type=" + type );
+				
+				
+				
+		
+	}
+
+}

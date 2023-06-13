@@ -1,0 +1,11 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		Address add=new Address(12,"anbunagar",613431);
+		Employee emp=new Employee("saya", 30, add);
+		System.out.println(emp);
+
+	}
+
+}

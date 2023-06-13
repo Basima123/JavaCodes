@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;ids&apos; from expression &apos;request.getParameterValues(&quot;rowkey&quot;)&apos;&#x0D;&#x0A;- Original project: &apos;SMS&apos;&#x0D;&#x0A;- Variable name: &apos;ids&apos;&#x0D;&#x0A;- Destination method: &apos;com.sms.controller.DeleteController.doGet(...)&apos;&#x0D;&#x0A;- Variable expression: &apos;request.getParameterValues(&quot;rowkey&quot;)&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;ids&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.sms.controller{DeleteController.java" name="ids" replace="true" selection="2327 0" stamp="1658338491612" varType="false" version="1.0"/>
+</session>

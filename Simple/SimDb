@@ -1,0 +1,3 @@
+ create table ssss(name varchar(20),password varchar(20));
+ insert into ssss values('hana','zayan');
+select * from ssss where(name='hana');

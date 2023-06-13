@@ -1,0 +1,36 @@
+Drop table customer1;
+create table customer1(
+id varchar(5),
+name varchar(66),
+age char(3),
+gender char(1),
+homeno char(8),
+mobileno char(8),
+primary key(id));
+
+select * from CUSTOMER1;
+
+drop table address1;
+
+create table address1(
+id varchar(5),
+block varchar(4),
+level varchar(2),
+unit varchar(4),
+street varchar(50),
+potal varchar(6),
+primary key(id)
+);
+
+select * from ADDRESS1;
+
+ALTER TABLE address1
+DROP COLUMN potal;
+
+
+ALTER TABLE address1
+add postal varchar(6);
+
+select * from address1;
+
+select * from customer1 inner join address1 on customer1.id=address1.id;

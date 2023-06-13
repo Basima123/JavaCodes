@@ -1,0 +1,69 @@
+package com.java3x.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.java3x.dto.Java3xDTO;
+import com.java3x.utility.JdbcConnection;
+
+public class Java3xDAO {
+
+	public static boolean insert(Java3xDTO dto) throws SQLException {
+		boolean status = false;
+		int i = 0, j = 0;
+		String num_cstmr = "0001";
+		Connection con = null;
+		PreparedStatement ps1 = null,ps2 = null;
+		
+			con = JdbcConnection.getConnection();
+			con.setAutoCommit(false);
+			ps1 = con.prepareStatement("insert into idnty_no(idnty_no,idnty_type,num_cstmr) values(?,?,?)");
+
+			ps1.setString(1, dto.getIdNo());
+			ps1.setString(2, dto.getIdType());
+			ps1.setString(3, num_cstmr);
+			i = ps1.executeUpdate();
+ps1.close();
+			// TODO Auto-generated method s
+			if (i > 0) {
+				ps2 = con.prepareStatement(
+						"insert into persons (num_cstmr,name,dob,gender,relation,citizen,card,doi,expiry) values (?,?,?,?,?,?,?,?,?)");
+				ps2.setString(1, num_cstmr);
+				ps2.setString(2, dto.getName());
+				ps2.setDate(3,  new java.sql.Date (dto.getDob().getTime()));
+				ps2.setString(4, dto.getGender());
+				ps2.setString(5, dto.getRelation());
+				ps2.setString(6, dto.getCitizen());
+				ps2.setString(7, dto.getCard());
+				if(dto.getDoi()!=null)
+				{
+				ps2.setDate(8,  new java.sql.Date(dto.getDoi().getTime()));
+				}
+				else
+					dto.setDoi(null);
+				if(dto.getExpiry()!=null)
+				{
+				ps2.setDate(9,  new java.sql.Date(dto.getExpiry().getTime()));
+				}
+				else
+					dto.setExpiry(null);
+				j = ps2.executeUpdate();
+ps2.close();
+				if (j > 0) {
+					con.commit();
+					status = true;
+				} else
+					con.rollback();
+			}
+		con.close();
+		return status;
+	}
+
+	public static boolean view(Java3xDTO dto) {
+		boolean status = false;
+		// TODO Auto-generated method stub
+		return status;
+	}
+
+}

@@ -1,0 +1,28 @@
+class A
+{
+	void sub(int a,int b) {
+		System.out.println("=====>"+(a-b));
+		
+	}
+	int add(int a,int b) {
+		return a+b;
+	}
+}
+class B extends A{
+	void sub(int a,int b) {
+		System.out.println("=====>"+(a+(b*a)));
+		
+	}
+}
+public class InheritanceEx {
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+B ob=new B();
+ob.add(2, 10);
+
+		
+	}
+
+}

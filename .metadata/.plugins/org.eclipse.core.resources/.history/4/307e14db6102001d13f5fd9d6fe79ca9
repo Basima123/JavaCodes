@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add New Customer</title>
+</head>
+<body>
+	<h2>Add New Customer</h2>
+	<form action="AddController" method="post">
+		<table border="1">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="name" id="name"></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input type="text" name="age" id="age"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" name="gender" id="gender" value="male">Male
+					<input type="radio" name="gender" id="gender" value="female">Female</td>
+			</tr>
+			<tr>
+				<td align="center">Address</td>
+			</tr>
+
+			<tr>
+				<td>Block :</td>
+				<td colspan="3"><input type="text" name="block"  id="block"	pattern="[1-9]{4}"></td>
+				<td colspan="3">Level </td><td>:</td>
+				<td colspan="3"><input type="text" name="level" id="level"	pattern="[1-9]{3}"></td>
+				<td >Unit :</td>
+				<td colspan="3"><input type="text" name="unit" id="unit" 	pattern="[1-9]{3}"></td>
+			</tr>
+			<tr>
+				<td>Street :</td>
+				<td><textarea rows="2" cols="10" name="street" id="street" maxlength="40">
+					</textarea></td>
+				<td>postal :</td>
+				<td colspan="2"><input type="text" name="postal" id="postal" maxlength="4"
+					pattern="[1-9]{6}"></td>
+					<tr><td>Contact number :</td></tr>
+					<tr><td>Home :</td>
+				<td colspan="2"><input type="text" name="homeNo" id="homeNo" 
+					pattern="[1-9]{8}"></td>
+					<td>Mobile :</td>
+					<td><input type="text" name="mobileNo" id="mobileNo" 
+					pattern="[1-9]{8}"></td></tr>
+			<tr>
+				<td align="center"><input type="submit" name="submit" value="ADD">
+				</td>
+				</tr>
+				</table>
+				</form>
+				</body>
+				</html>
+				

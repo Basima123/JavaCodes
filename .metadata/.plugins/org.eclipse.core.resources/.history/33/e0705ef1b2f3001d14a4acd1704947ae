@@ -1,0 +1,68 @@
+package com.task;
+
+public class Array_Concat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Array_Concat ac = new Array_Concat();
+		ac.array_Addition();
+		//ac.array_concat();
+		//ac.find_negative_no();
+		//ac.copy_negative_no();
+		
+
+	}
+
+	private void copy_negative_no() {
+		// TODO Auto-generated method stub
+		int a[]= {11,-12,-14,-16,19,55,88,-99};
+		int b[]=new int[a.length];
+		
+	}
+
+	private void find_negative_no() {
+		// TODO Auto-generated method stub
+		
+		int num[]= {10,-11,-12,-12,-22,7};
+		int count=0;
+		
+		for(int i=0;i<num.length;i++)
+		{
+		if(num[i]<0)
+		{
+			System.out.println(num[i]);
+			count++;
+			
+		}
+		}
+		System.out.println("Total Negative num : " + count);
+	}
+
+	private void array_Addition() {
+		// TODO Auto-generated method stub
+		int[] amt1 = { 10, 20, 30, 40 };
+		int[] amt2 = { 50, 60, 70,};
+		int small;
+		if(amt1.length>=amt2.length)
+		{
+			small=amt2.length;
+		}
+		else 
+			small=amt1.length;
+			
+		int len = (amt1.length > amt2.length) ? amt1.length : amt2.length;// len=4
+		int tot[] = new int[len];
+		System.out.println(" Total Amount :");
+		for (int i = 0; i < len; i++) // 0<4,1<4,2<4,3<4,4<4;
+		{
+			if(small>i)
+			{
+			tot[i] = amt1[i] + amt2[i];
+			System.out.print(tot[i] + " ");
+		}else
+			amt1[i]=amt2[i];
+			
+		}
+
+	}
+}

@@ -1,0 +1,8 @@
+1648483732546	Extract local variable 'name'
+1648483787284	Extract local variable 'pass'
+1648485234835	Extract local variable 'con'
+1648485768910	Extract local variable 'pst'
+1648719874493	Extract local variable 'lang'
+1648720499399	Extract local variable 'dob1'
+1648720814591	Extract local variable 'insertresult'
+1648722062629	Delete element

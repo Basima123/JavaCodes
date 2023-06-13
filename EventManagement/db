@@ -1,0 +1,7 @@
+CREATE TABLE person(Id int not null,Name varchar(20),Password varchar(20),Gender varchar(20),Dob date);
+ALTER TABLE Person ADD PRIMARY KEY (Id);
+INSERT INTO person VALUES(104,'sandra','lavender','female','1995-10-02');
+SELECT * FROM person;
+CREATE TABLE event(EventId int not null,EventName varchar(20),EventDate date,EventTime time,Venue varchar(20),Status varchar(20),PRIMARY KEY(EventId));
+INSERT INTO event VALUES(204,'Wedding Anniversary','2021-8-03','2021-8-03 12:00:00','ParkRoyal Hotel','Booked');
+SELECT * FROM event;

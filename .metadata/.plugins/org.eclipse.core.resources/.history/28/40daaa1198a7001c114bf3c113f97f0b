@@ -1,0 +1,34 @@
+package com.saya.interfacedemo;
+
+public class TestClass implements Animal2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void eating() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sleeping() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void walking() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void name() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

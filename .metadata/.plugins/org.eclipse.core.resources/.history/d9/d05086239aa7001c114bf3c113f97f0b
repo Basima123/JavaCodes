@@ -1,0 +1,28 @@
+package com.saya.interfacedemo;
+
+public class Cat implements Animal2{
+
+	@Override
+	public void eating() {
+		System.out.println("CAt eats");
+	}
+
+	@Override
+	public void sleeping() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void walking() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void name() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

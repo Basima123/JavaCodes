@@ -1,0 +1,26 @@
+package com.task;
+
+public class Array_Concat {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Array_Concat ac=new Array_Concat();
+		ac.array_Addition();
+		
+
+	}
+
+	private void array_Addition() {
+		// TODO Auto-generated method stub
+		int[] amt1= {10,20,30,40};
+		int[] amt2= {50,60,70};
+		int len=(amt1.length>amt2.length)?amt1.length:amt2.length;
+		int tot[]=new int[len];
+		for(int i=0;i<len;i++) 
+		{
+			tot[i]=amt1[i]+amt2[i];
+			System.out.println(" Total Amount :" +tot[i] +" ");
+		}
+				
+		} 
+}

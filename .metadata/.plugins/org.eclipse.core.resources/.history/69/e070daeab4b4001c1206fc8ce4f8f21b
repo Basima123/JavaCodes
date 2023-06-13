@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>User Login </title>
+</head>
+<body style="background-color :#9276AC">
+<h1 align="left"> User Login </h1>
+<form action = "ejblogin.java" method =post >
+<table border="1" >
+<tr> 
+<td colspan="2">
+<label>User Name </label>
+<input type="text" id="id1" name="uname">
+ </td> 
+ </tr>;
+ <tr >
+ <td colspan="2">
+<label>Password </label> 
+<input type="password" id="id2" name="password">
+</td>
+</tr>
+ <tr>
+ <td>
+<input type="submit" id="id3" name="submit" value="Submit">
+<input type="reset" id="id4" name="reset" value="Reset">
+ </td>
+ </tr> 
+ </table>
+</form>
+<a href="second.jsp">Click here to Register </a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package com.learning;
+
+public class Dell extends Laptop{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Dell dell= new Dell();
+		dell.browse();
+		dell.doProgram();
+		System.out.println(dell.harddisk);
+			
+		}
+
+}

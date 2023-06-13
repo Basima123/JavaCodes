@@ -1,0 +1,1 @@
+CREATE TABLE person(Id int not null,Name varchar(20),Password varchar(20),Gender varchar(20),Dob date);

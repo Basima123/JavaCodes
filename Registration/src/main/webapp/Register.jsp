@@ -1,0 +1,85 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<%@page import="com.reg.dto.RegDTO" %>
+<%@page import="java.lang.*" %>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<%
+String message=(String)session.getAttribute("message");
+RegDTO r=new RegDTO();
+if (session.getAttribute("RegDTO")!= null)
+{
+	r=(RegDTO)session.getAttribute("RegDTO");
+}
+	else
+	{
+		r=new RegDTO();	
+	}
+%>
+</head>
+<body style="background-color:#CCC9F8" >
+	<h2 align="center">Registration</h2>
+	<form action="RegController" method="post">
+		<table style="background-color : #E5E0ED" border="1">
+			<tr>
+				<td><label>Name</label></td>
+				<td><input type="text" id="name" name="name"></td>
+			</tr>
+			<tr>
+				<td><label>Age</label></td>
+				<td><input type="number" id="age" name="age"></td>
+			</tr>
+			<tr>
+				<td><label>Date of Birth</label></td>
+				<td><input type="date" id="date" name="date" placeholder="DD-MM-YYYY"></td>
+			</tr>
+			<tr>
+				<td><label>Language</label></td>
+				<td><input type="checkbox" name="lang" value="english">English
+					<input type="checkbox" name="lang" value="tamil">Tamil <input
+					type="checkbox" name="lang" value="malay">Malay <input
+					type="checkbox" name="lang" value="chinese">Chinese</td>
+			</tr>
+			<tr>
+				<td><label>Gender</label></td>
+
+				<td><input type="radio" id="gender" name="gender" value="male">
+					Male <input type="radio" id="gender" name="gender" value="female">
+					Female</td>
+			<tr>
+				<td><label>User Name</label></td>
+				<td><input type="text" id="uname" name="uname"></td>
+			</tr>
+			<tr>
+				<td><label>Password</label></td>
+				<td><input type="password" id="password" name="password"></td>
+			</tr>
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type="email" id="email" name="email"></td>
+			</tr>
+			<tr>
+				<td><label>Contact</label></td>
+				<td><input type="tel" id="contact" name="contact"></td>
+			</tr>
+			<tr>
+				<td><label>Address</label></td>
+				<td><textarea id="address" rows="3" cols="15" name="address"> </textarea></td>
+			</tr>
+			<tr>
+				<td><label>Type</label></td>
+				<td><select name="type" id="type">
+						<option value="user">user</option>
+						<option value="admin">admin</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="buttonAction"
+				value="Register" ></td>
+		</table>
+	</form>
+</body>
+</html>

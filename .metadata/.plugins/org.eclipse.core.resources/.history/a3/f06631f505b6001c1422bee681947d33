@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update</title>
+</head>
+<body style=background-color:#AEA1B9 >
+<h1> Update </h1>
+<form action = "UpdateController" method="post">
+<table border="1">
+<tr><td >
+<label>Name</label></td>
+<td><input type="text" id="id1" name="name">
+</td></tr>
+<tr><td>
+<label>DOB</label></td>
+<td><input type="date" id="id2" name="dob1" placeholder=dd/mm/yyyy>
+</td></tr>
+<tr><td >
+<label>Address</label>
+<td><textarea rows="2" cols="20" id="address"name="address"></textarea>
+</td></tr>
+<tr><td>
+<label>Gender</label></td>
+<td><input type="radio" id="id4" name="gender" value="Male">Male
+<input type="radio" id="id5" name="gender" value ="Female">Female
+</td></tr>
+<tr><td >
+<label>Language</label></td>
+<td><input type="checkbox" id="id6" name="lan" value="English">English
+<input type="checkbox" id="id7" name="lan" value="Tamil">Tamil
+<input type="checkbox" id="id8" name="lan" value="Malay">Malay
+<input type="checkbox" id="id9" name="lan" value="Mandarin">Mandarin
+</td></tr>
+<tr><td >
+<label>Password</label></td>
+<td><input type="password" id="id" name="password">
+</td></tr>
+<tr align="center">
+<td colspan="2">
+<input type="submit" id="id10" name="submit" value="SUBMIT">
+<input type="submit" id="id=11" name="cancel" value="CANCEL">
+<input type="reset" id="id12" name="reset" value="RESET">
+<td></tr>
+</table>
+</form>
+</body>
+</html>

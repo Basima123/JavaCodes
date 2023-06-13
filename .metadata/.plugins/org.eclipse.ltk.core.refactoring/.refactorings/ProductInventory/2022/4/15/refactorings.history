@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;utility&apos; to &apos;com.my.confi&apos;&#x0D;&#x0A;- Original project: &apos;ProductInventory&apos;&#x0D;&#x0A;- Original element: &apos;ProductInventory/src/main/java/utility&apos;&#x0D;&#x0A;- Renamed element: &apos;ProductInventory/src/main/java/com.my.confi&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;utility&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;utility" name="com.my.confi" qualified="false" references="true" stamp="1649205556019" textual="false" version="1.0"/>
+</session>

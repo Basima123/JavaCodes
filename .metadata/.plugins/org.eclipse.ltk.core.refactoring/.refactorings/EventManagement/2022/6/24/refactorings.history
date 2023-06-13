@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.event.dto.PersonDto.cpassword&apos; in &apos;com.event.dto.PersonDto&apos;&#x0D;&#x0A;- Original project: &apos;EventManagement&apos;&#x0D;&#x0A;- Original element: &apos;com.event.dto.PersonDto.cpassword&apos;&#x0D;&#x0A;- Getter method name: &apos;getCpassword&apos;&#x0D;&#x0A;- Setter method name: &apos;setCpassword&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;cpassword&apos;" flags="589830" getter="getCpassword" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java&lt;com.event.dto{PersonDto.java[PersonDto^cpassword" insertion="5" setter="setCpassword" stamp="1654936771236" version="1.0" visibility="1"/>
+</session>

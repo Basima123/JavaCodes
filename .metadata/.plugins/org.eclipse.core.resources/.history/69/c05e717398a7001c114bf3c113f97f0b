@@ -1,0 +1,11 @@
+package com.saya.interfacedemo;
+
+public class TestClass  {
+
+	public static void main(String[] args) {
+		Animal2 ob=new Lion();
+		ob.eating();
+
+	}
+
+}

@@ -1,0 +1,3 @@
+select * from customer1 inner join address1 on customer1.id=address1.id;
+select CUSTOMER1.name,address1.street from ADDRESS1 left join CUSTOMER1 on ADDRESS1.id=customer1.id;
+select customer1.id,customer1.name,address1.block,address1.level,address1.unit from customer1 right join ADDRESS1 on ADDRESS1.id=CUSTOMER1.id;

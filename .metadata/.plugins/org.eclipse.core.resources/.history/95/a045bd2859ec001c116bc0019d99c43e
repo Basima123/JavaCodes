@@ -1,0 +1,94 @@
+package com.sms.controller;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.sms.dao.StudentDAO;
+import com.sms.dto.StudentDTO;
+
+/**
+ * Servlet implementation class RegisterController
+ */
+@WebServlet("/RegisterController")
+public class RegisterController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public RegisterController() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		//doGet(request, response);
+		StudentDTO student=new StudentDTO();
+		try {
+			String id1=request.getParameter("id");
+			int	id=Integer.parseInt(id1);
+			String name = request.getParameter("name");
+			String dob1 = request.getParameter("dob");
+			Date dob=(Date)new SimpleDateFormat("yyyy-MM-dd").parse(dob1);
+			String address = request.getParameter("address");
+			String gender = request.getParameter("gender");
+			String lang[] = request.getParameterValues("lan");
+			String lan="";
+			for(int i=0 ;i<lang.length; i++)
+			{
+				lan+= lang[i] + ",";
+			}
+			String uname = request.getParameter("uname");
+			String password=request.getParameter("password");
+			String access = request.getParameter("access");
+			student = new StudentDTO();
+			student.setId(id);
+			student.setName(name);
+			student.setDob(dob);
+			student.setAddress(address);
+			student.setGender(gender);
+			student.setLanguage(lan);
+			student.setUserName(uname);
+			student.setPassword(password);
+			student.setAccess(access);
+			System.out.println(student);
+		} catch (NumberFormatException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		//call dao for insert
+//		StudentDAO dao=new StudentDAO();
+//		boolean status=dao.insertStudent(student);
+		//status true
+		//success page
+		//status false
+		//errror page
+		}
+	 
+	}
+

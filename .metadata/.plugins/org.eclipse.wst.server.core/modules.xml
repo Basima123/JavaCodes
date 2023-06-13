@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:FirstWorkFlow" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:EventManagement" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:ProductInventory" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Registration" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:FirstProject" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Project1" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JavaProject3x" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:CustomerApp" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Testing" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Simple" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:EJB" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Assignment1" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:customer" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Customer" serverId="apache-tomcat-9.0.46 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:SMS" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:OccupierDetails" serverId="Tomcat v9.0 Server at localhost"/>
+</modules>

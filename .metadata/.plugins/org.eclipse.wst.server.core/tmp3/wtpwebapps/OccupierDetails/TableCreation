@@ -1,0 +1,18 @@
+create table occupier(
+name char(66) not null,
+idNo char(20) not null,
+idType varchar(4),
+telHome integer,
+telOffice integer,
+hp integer,
+fax integer,
+email varchar(30),
+gender varchar(8),
+dob date,
+status varchar(20),
+citizen varchar(20),
+nation varchar(20),
+race varchar(20),
+
+primary key (idNo)
+);

@@ -1,0 +1,31 @@
+package com.task;
+
+public class Array_task {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Array_task at = new Array_task();
+		at.find_youTube_();
+
+	}
+
+	private void find_youTube_() {
+		// TODO Auto-generated method stub
+		
+		
+		int youTube[] = { 15, 12, 10, 15, 30 };
+		int total = 0;
+		float avg =0.00;
+		System.out.println("Time watching youTube in minutes");
+		for (int i = 0; i < youTube.length; i++) {
+			System.out.println(youTube[i] + " ");
+			total = total + youTube[i];
+		}
+		
+		System.out.println("Total time watching youTube in minutes :" +total);
+		avg=total/youTube.length;
+		System.out.println("Average time watching youTube in minutes :" + avg);
+	}
+
+}

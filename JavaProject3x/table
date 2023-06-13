@@ -1,0 +1,27 @@
+CREATE TABLE java3x (
+
+      idNo varchar(20),
+	  idType varchar(20),
+	  name varchar(40),
+	  relation varchar(20),
+	  gender varchar(10),
+	  dob date,
+	  citizen varchar(20),
+	  card varchar(20),
+	  doi date,
+	  expiry date,
+	  primary key(name)
+
+);
+
+drop table java3x;
+
+create table idnty_no(
+idnty_no varchar(20),
+idnty_type varchar(3),
+num_cstmr varchar(9)
+);
+
+
+
+se

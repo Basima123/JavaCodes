@@ -1,0 +1,39 @@
+
+public class Location {
+	int km;
+	int time;
+	String transport;
+	public Location(int km, int time, String transport) {
+		super();
+		this.km = km;
+		this.time = time;
+		this.transport = transport;
+	}
+	public Location() {
+		super();
+	}
+	public int getKm() {
+		return km;
+	}
+	public void setKm(int km) {
+		this.km = km;
+	}
+	public int getTime() {
+		return time;
+	}
+	public void setTime(int time) {
+		this.time = time;
+	}
+	public String getTransport() {
+		return transport;
+	}
+	public void setTransport(String transport) {
+		this.transport = transport;
+	}
+	@Override
+	public String toString() {
+		return "Location [km=" + km + ", time=" + time + ", transport=" + transport + "]";
+	}
+	
+
+}

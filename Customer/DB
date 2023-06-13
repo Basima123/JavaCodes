@@ -1,0 +1,30 @@
+create table customer1(
+name char(66) not null,
+age varchar(3),
+gender char(1),
+homeNo char(8),
+mobileNo char(8) not null,
+primary key (name,mobileNo)
+);
+
+drop table customer1;
+
+insert into CUSTOMER1 values('Kumar','28','M','63001122','96002233');
+insert into CUSTOMER1 values('Nila','25','F','65221234','98765432');
+Alter table CUSTOMER1 Add customerId int IDENTITY(1,1) PRIMARY KEY;error
+int generated always as identity(start with 100,increment by 1)
+
+create table test(id int);
+ALTER TABLE customer1 alter customerid int primary key;error
+UPDATE 	CUSTOMER1 SET customerId AUTO_INCREMENT;error
+alter table CUSTOMER1 drop customerId
+
+create table Address1(
+customerid int NOT NULL,
+block char(4),
+level char(2),
+unit char(4),
+street char(50),
+postal char(6),
+primary key (customerId)
+);
